@@ -22,16 +22,12 @@
         <button onclick="submitAnswer()">提交</button>
     </div>
     <div id="result"></div>
-
-    <!-- 第二個任務區塊，初始隱藏 -->
-    <div id="secondMission" style="display:none;">
-        <h2>第二個任務：操作小遊戲機關</h2>
-        <p>請拖動紅色方塊到綠色目標區域以啟動防禦系統。</p>
-        <div id="gameArea">
-            <div id="draggable" draggable="true"></div>
-            <div id="target"></div>
-        </div>
-        <div id="secondResult"></div>
+    <!-- 新增三個可視化謎題小遊戲機關容器 -->
+    <div id="visualPuzzles" style="display:none; margin-top: 30px;">
+        <h2>第二階段任務：完成以下三個謎題小遊戲</h2>
+        <div id="sliderPuzzleContainer" style="margin-bottom: 30px;"></div>
+        <div id="colorMatchingContainer" style="margin-bottom: 30px;"></div>
+        <div id="memoryGameContainer" style="margin-bottom: 30px;"></div>
     </div>
 </div>
 <script src="script.js"></script>

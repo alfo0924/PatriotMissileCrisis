@@ -76,49 +76,7 @@ button:hover {
     line-height: 1.6;
 }
 
-/* 第二個任務樣式 */
-#secondMission {
-    margin-top: 30px;
-    border-top: 2px solid #00ff00;
-    padding-top: 20px;
-}
-
-#gameArea {
-    position: relative;
-    width: 300px;
-    height: 150px;
-    margin: 20px auto;
-    background-color: #000;
-    border: 2px solid #00ff00;
-    border-radius: 10px;
-}
-
-#draggable {
-    width: 50px;
-    height: 50px;
-    background-color: red;
-    position: absolute;
-    top: 50%;
-    left: 10px;
-    transform: translateY(-50%);
-    cursor: grab;
-    border-radius: 5px;
-}
-
-#target {
-    width: 60px;
-    height: 60px;
-    background-color: green;
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-    border-radius: 5px;
-}
-
-#secondResult {
-    font-size: 18px;
-    font-weight: bold;
-    color: #00ff00;
-    margin-top: 10px;
+/* 新增謎題小遊戲容器樣式 */
+#sliderPuzzleContainer, #colorMatchingContainer, #memoryGameContainer {
+    margin: auto;
 }
