@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>愛國者導彈危機</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>愛國者導彈危機</h1>
+    <div id="scenario">
+        <p>1991年，第一次海灣戰爭，達蘭基地。伊拉克飛毛腿導彈即將來襲！</p>
+        <p>愛國者反導彈系統因時鐘誤差（0.33秒）無法精確追踪導彈，導彈每秒移動1.5公里，誤差已達600公尺。</p>
+        <p>你的任務：修正系統時鐘誤差，成功攔截導彈！</p>
+    </div>
+    <div id="timer">剩餘時間：60秒</div>
+    <div id="puzzle">
+        <p>謎題：計算並輸入正確的時鐘修正值（毫秒）以校準系統。</p>
+        <p>提示：系統已運行100小時，每小時誤差0.0033秒，總誤差為？</p>
+        <input type="number" id="answer" placeholder="輸入修正值（毫秒）">
+        <button onclick="submitAnswer()">提交</button>
+    </div>
+    <div id="result"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

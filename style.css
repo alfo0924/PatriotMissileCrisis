@@ -1,0 +1,77 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #1a1a1a;
+    color: #00ff00;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.container {
+    background-color: #2d2d2d;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+    max-width: 600px;
+    width: 100%;
+}
+
+h1 {
+    color: #00ff00;
+    margin-bottom: 20px;
+}
+
+#scenario {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+#timer {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #ff0000;
+    background-color: #000;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#puzzle {
+    margin: 20px 0;
+}
+
+input {
+    padding: 10px;
+    margin: 10px;
+    background-color: #000;
+    color: #00ff00;
+    border: 2px solid #00ff00;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #004400;
+    color: #00ff00;
+    border: 2px solid #00ff00;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #006600;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.6;
+}
