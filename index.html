@@ -12,23 +12,42 @@
     <div id="scenario">
         <p>1991年，第一次海灣戰爭，達蘭基地。伊拉克飛毛腿導彈即將來襲！</p>
         <p>愛國者反導彈系統因時鐘誤差（0.33秒）無法精確追踪導彈，導彈每秒移動1.5公里，誤差已達600公尺。</p>
-        <p>你的任務：修正系統時鐘誤差，成功攔截導彈！</p>
+        <p>你的任務：完成三個任務以攔截導彈！</p>
+    </div>
+    <div id="animation-area">
+        <div id="missile"></div>
+        <div id="radar"></div>
     </div>
     <div id="timer">剩餘時間：60秒</div>
-    <div id="puzzle">
-        <p>謎題：計算並輸入正確的時鐘修正值（毫秒）以校準系統。</p>
-        <p>提示：系統已運行100小時，每小時誤差0.0033秒，總誤差為？</p>
-        <input type="number" id="answer" placeholder="輸入修正值（毫秒）">
-        <button onclick="submitAnswer()">提交</button>
+    <div id="task-area">
+        <div id="task1" class="task">
+            <h2>任務1：校準系統時鐘</h2>
+            <p>計算並輸入正確的時鐘修正值（毫秒）以校準系統。</p>
+            <p>提示：系統已運行100小時，每小時誤差0.0033秒，總誤差為？</p>
+            <input type="number" id="answer1" placeholder="輸入修正值（毫秒）">
+            <button onclick="submitTask1()">提交</button>
+        </div>
+        <div id="task2" class="task" style="display: none;">
+            <h2>任務2：校準雷達頻率</h2>
+            <p>拖動滑塊調整雷達頻率到目標範圍（45-55）。</p>
+            <input type="range" id="radar-slider" min="0" max="100" value="0">
+            <p>當前頻率：<span id="frequency">0</span></p>
+            <button onclick="submitTask2()">確認</button>
+        </div>
+        <div id="task3" class="task" style="display: none;">
+            <h2>任務3：啟動發射序列</h2>
+            <p>按以下序列點擊按鈕：紅-綠-藍-紅</p>
+            <div id="sequence-buttons">
+                <button class="seq-btn" data-color="red" style="background-color: red;">紅</button>
+                <button class="seq-btn" data-color="green" style="background-color: green;">綠</button>
+                <button class="seq-btn" data-color="blue" style="background-color: blue;">藍</button>
+            </div>
+            <p>你的輸入：<span id="sequence-input"></span></p>
+            <button onclick="submitTask3()">確認</button>
+            <button onclick="resetTask3()">重置</button>
+        </div>
     </div>
     <div id="result"></div>
-    <!-- 新增三個可視化謎題小遊戲機關容器 -->
-    <div id="visualPuzzles" style="display:none; margin-top: 30px;">
-        <h2>第二階段任務：完成以下三個謎題小遊戲</h2>
-        <div id="sliderPuzzleContainer" style="margin-bottom: 30px;"></div>
-        <div id="colorMatchingContainer" style="margin-bottom: 30px;"></div>
-        <div id="memoryGameContainer" style="margin-bottom: 30px;"></div>
-    </div>
 </div>
 <script src="script.js"></script>
 </body>
